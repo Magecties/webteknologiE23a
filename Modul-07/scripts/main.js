@@ -9,16 +9,16 @@ const dataset = [
   [410, 12],
   [475, 44],
 ];
-
-//Udskriver: ?
+//husk at tælle 0
+//Udskriver: 5, 20
 console.log(dataset[0]);
-//Udskriver: ?
+//Udskriver: 5
 console.log(dataset[0][0]);
-//Udskriver: ?
+//Udskriver: 480
 console.log(dataset[1][0]);
-//Udskriver: ?
+//Udskriver: 33
 console.log(dataset[3][1]);
-//Udskriver: ?
+//Udskriver: 95
 console.log(dataset[4][1]);
 
 /*
