@@ -3,11 +3,11 @@ const w = 500;
 const h = 100;
 
 const dataset = [
-  [5, 20],
+  [150, 20],
   [480, 90],
   [250, 50],
   [100, 33],
-  [330, 95],
+  [370, 95],
   [410, 12],
   [475, 44],
 ];
@@ -24,7 +24,7 @@ const xScale = d3
       return d[0];
     }),
   ])
-  .range([30, w - 30])
+  .range([10 , w - 30])
   .nice();
 
 //Skala for y-aksen
@@ -36,7 +36,7 @@ const yScale = d3
       return d[1];
     }),
   ])
-  .range([30, h - 30])
+  .range([10, h - 30])
   .nice();
 
 //Scatter plot
@@ -69,11 +69,11 @@ svg
     return d[1];
   })
   .attr("x", function (d) {
-    return xScale(d[0]) + 5;
+    return xScale(d[0]) + 15;
   })
   .attr("y", function (d) {
-    return yScale(h - d[1]) - 5;
+    return yScale(h - d[1]) - 2;
   })
   .attr("font-family", "sans-serif")
   .attr("font-size", "11px")
-  .attr("fill", "red");
+  .attr("fill", "blue");

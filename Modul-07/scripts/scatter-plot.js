@@ -1,6 +1,7 @@
 //Width og height til SVG-elementet
-const w = 500;
-const h = 100;
+const w = 50000;
+const h = 10000;
+const paddingg = 50;
 
 const dataset = [
   [5, 20],
@@ -32,4 +33,6 @@ svg
     return d[1];
   })
   //Radius er en konstant på '5'
-  .attr("r", 5);
+  .attr("r", 10 );
+
+  
