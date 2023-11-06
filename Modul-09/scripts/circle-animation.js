@@ -5,7 +5,6 @@ const svg = d3
   .attr("width", 1000)
   .attr("height", 1000);
 
-
 //Vi putter en cirkel ind i SVG-elementet
 svg
   .append("circle")
